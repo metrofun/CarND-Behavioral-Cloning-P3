@@ -16,20 +16,20 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [model_plot]: ./model_plot.png "Model Architecture"
-[recovery_1]: ./examples/recovery_1.png ""
-[recovery_2]: ./examples/recovery_2.png ""
-[recovery_3]: ./examples/recovery_3.png ""
-[recovery_4]: ./examples/recovery_4.png ""
-[center_1]: ./examples/center_1.png ""
-[center_2]: ./examples/center_2.png ""
-[center_3]: ./examples/center_3.png ""
-[center_4]: ./examples/center_4.png ""
-[center_5]: ./examples/center_5.png ""
-[flipping_1]: ./examples/flipping_1.png ""
-[flipping_2]: ./examples/flipping_2.png ""
-[center]: ./examples/center.png ""
-[left]: ./examples/left.png ""
-[right]: ./examples/right.png ""
+[recovery_1]: ./examples/recovery_1.jpg "Recovery 1"
+[recovery_2]: ./examples/recovery_2.jpg "Recovery 2"
+[recovery_3]: ./examples/recovery_3.jpg "Recovery 3"
+[recovery_4]: ./examples/recovery_4.jpg "Recovery 4"
+[center_1]: ./examples/center_1.jpg ""
+[center_2]: ./examples/center_2.jpg ""
+[center_3]: ./examples/center_3.jpg ""
+[center_4]: ./examples/center_4.jpg ""
+[center_5]: ./examples/center_5.jpg ""
+[flipping_1]: ./examples/flipping_1.jpg ""
+[flipping_2]: ./examples/flipping_2.jpg ""
+[center]: ./examples/center.jpg ""
+[left]: ./examples/left.jpg ""
+[right]: ./examples/right.jpg ""
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.
@@ -97,16 +97,18 @@ Here is a visualization of the architecture:
 ![Model Architecture][model_plot]
 
 #### 3. Creation of the Training Set & Training Process
-
 To capture good driving behavior, I recorded the vehicle going straight along the road, as well as recovering from the left side and right sides of the road back to center so that the vehicle would learn to stay within the driving area of the road.
 
 Going straight:
+
 ![Center 1][center_1]
 ![Center 2][center_2]
 ![Center 3][center_3]
 ![Center 4][center_4]
 ![Center 5][center_5]
+
 Recovering:
+
 ![Recovery 1][recovery_1]
 ![Recovery 2][recovery_2]
 ![Recovery 3][recovery_3]
@@ -117,9 +119,12 @@ Then I repeated this process in the opposite direction of the track.
 To augment the data sat, I used left-right flipping of images, as well as left and rights cameras' views.
 
 Flipping:
+
 ![Flipping 1][flipping_1]
 ![Flipping 2][flipping_2]
+
 Left, Center and Right cameras:
+
 ![Center][center]
 ![Left][left]
 ![Right][right]
